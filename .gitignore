@@ -1,0 +1,42 @@
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+*.log
+
+# 🔒 Entornos virtuales
+venv/
+.env
+
+# 💡 Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 📦 Archivos de dependencia cacheados
+*.egg-info/
+dist/
+build/
+
+# 🐳 Docker
+*.tar
+*.pid
+.dockerignore
+
+# ⚙️ Pulumi
+Pulumi.dev.yaml           # puedes ignorarlo si no quieres subir tu config local
+Pulumi.*.yaml.backup
+.pulumi/
+*.pulumi.stack.json
+
+# 💻 SO / Archivos temporales
+.DS_Store
+Thumbs.db
+
+# 📦 Node/npm (si llegas a usarlo con Pulumi CLI)
+node_modules/
+
+# 💡 Git
+.git/
