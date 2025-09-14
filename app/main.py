@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from typing import List, Optional
 import sqlite3
 
-from app.database import init_db, EstudianteDB
+from database import init_db, EstudianteDB
 app = FastAPI(title="CRUD Estudiantes", version="1.0.0")
 
 class EstudianteBase(BaseModel):
