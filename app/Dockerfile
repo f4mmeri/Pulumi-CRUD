@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copiar todos los archivos del proyecto (main.py, database.py, etc.)
 COPY ../.. .
 
-EXPOSE 8000
+EXPOSE 80
 
 # Ejecutar la aplicación con Uvicorn, escuchando en 0.0.0.0:80
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
