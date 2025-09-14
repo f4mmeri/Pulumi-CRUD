@@ -59,8 +59,8 @@ sg = aws.ec2.SecurityGroup("fastapi-sg",
     description="Allow HTTP",
     ingress=[{
         "protocol": "tcp",
-        "from_port": 80,
-        "to_port": 80,
+        "from_port": 8000,
+        "to_port": 8000,
         "cidr_blocks": ["0.0.0.0/0"],
     }],
     egress=[{
